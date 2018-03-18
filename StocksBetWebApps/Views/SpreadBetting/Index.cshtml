@@ -1,0 +1,247 @@
+﻿<input type="hidden" id="instrumentCode" value="@ViewBag.Symbol">
+@if (ViewBag.Symbol != null)
+{
+
+    <div class="p-3 text-center text-lg-left bg-dark text-white overlay overlay-primary overlay-op-9">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-2">
+                    <!--<img src="@ViewBag.LogoUrl" height="100" class="mt-3">-->
+                    <div style="width: 100px !important; height: 100px !important; background:url(@ViewBag.LogoUrl) no-repeat; background-size: contain;"></div>
+                </div>
+                <div class="col-12 col-lg-5 py-2">
+                    <h3 class="text-uppercase font-weight-bold">
+                        @ViewBag.CompanyName
+                    </h3>
+                    Symbol: <b>@ViewBag.Symbol</b>,
+                    Exchange: @ViewBag.Exchange.
+                    <br> Sector: @ViewBag.Sector, Industry: @ViewBag.Industry.
+                    <br> CEO: @ViewBag.CEO.
+                </div>
+                <div class="col-12 col-lg-5 py-2 text-lg-right">
+                    <p>
+                        <b>Your virtual account:</b>
+                        <span id="yourSpreadBettingRevenue"></span>.<br>In this test version of app limit of one bet is 100 STBT.
+                    </p>
+                    <div id="spreadBetText" style="display: none;">
+                        <p>Market is closed, you can bet on this stocks only when market is Open.</p>
+                    </div>
+                    <div id="spreadBetBtns" style="display: none;">
+                        <button id="btnAddSpreadBetShort" type="button" class="btn btn btn-red btn-rounded btn-primary px-3" onclick='App.addSpreadBet("short");'>
+                            <i class="fas fa-angle-double-down ml-2"></i> Going Short to
+                            <b>
+                                <span id="bidPrice">X</span>
+                            </b>
+                        </button>
+                        <button id="btnAddSpreadBetLong" type="button" class="btn btn btn-green btn-rounded btn-primary px-3" onclick='App.addSpreadBet("long");'>
+                            <i class="fas fa-angle-double-up ml-2"></i> Going Long to
+                            <b>
+                                <span id="askPrice">X</span>
+                            </b>
+                        </button>
+                        <style>
+
+                            .btn-green {
+                                background-color: rgb(34, 151, 85);
+                                border-color: rgb(44, 134, 83);
+                            }
+
+                                .btn-green:hover {
+                                    background-color: rgb(43, 131, 81);
+                                    border-color: rgb(40, 117, 74);
+                                }
+
+                            .btn-red {
+                                background-color: rgb(196, 99, 75);
+                                border-color: rgb(155, 79, 68);
+                            }
+
+                                .btn-red:hover {
+                                    background-color: rgb(172, 77, 64);
+                                    border-color: rgb(165, 70, 58);
+                                }
+                        </style>
+                    </div>
+
+                </div>
+
+
+
+                <div id="yourSpreadBetting"></div>
+            </div>
+        </div>
+    </div>
+    <div class="betting-result animated">
+        <div class="container">
+            <span>Betting results:</span>
+            <div id="bettingResults"></div>
+        </div>
+    </div>
+    <style>
+
+        .betting-result {
+            background: #f6f6f6;
+            padding: 10px;
+            border-bottom: #00ADBB 4px solid;
+        }
+    </style>
+    <br>
+
+    <div class="container">
+        <div class="row align-items-stretch">
+            <div class="col">
+                <p>@ViewBag.Description</p>
+                <div id="HighchartsContainer"></div>
+            </div>
+            <div class="col-lg-5">
+                <h2 class="h0 inline">
+                    <span>
+                        <span id="latestPrice"></span>
+                        <span id="latestPriceChange" class="regular"></span>
+                        <span id="latestPriceChangePercent" class="regular"></span>
+                    </span>
+                </h2>
+                <p>
+                    <span id="marketStatus"></span>
+                    <span id="latestSourceStatus"></span>
+                </p>
+                <div>
+                    <h5 class="mt1">Orders book</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <table class="table-sm" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th class="text-lg-right" colspan="3">
+                                            <b>Bids</b>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="bidsOrders"></tbody>
+                            </table>
+                        </div>
+                        <div class="col-6">
+                            <table class="table-sm" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th colspan="3">
+                                            <b>Asks</b>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="asksOrders"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <h5 class="mt-5">Trades</h5>
+                    <table class="table-sm" width="100%">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <b>Price</b>
+                                </th>
+                                <th></th>
+                                <th class="text-lg-right">
+                                    <b>Size</b>
+                                </th>
+                                <th width="50%">Spread Betting Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tradesList"></tbody>
+                    </table>
+                </div>
+
+
+                <style>
+
+                    .table-sm td,
+                    .table-sm th {
+                        padding: .3rem;
+                        padding-left: .8rem;
+                        padding-right: .8rem;
+                        vertical-align: top;
+                        border-top: 1px solid #dee2e6;
+                    }
+                </style>
+
+
+            </div>
+        </div>
+        <div id="instrumentPeers"></div>
+
+        <div class='mt-5' id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function () { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://stocksbet.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>
+            Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+
+    </div>
+
+}
+else
+{
+
+
+    <div class="container">
+
+        <hr class="hr-lg mt-5 mb-3 w-10 mx-auto hr-primary">
+
+        <h4 class="text-center font-weight-light mt-2 mb-0 text-muted">
+            <span id="durationCurrentBetting">First Spread Betting on Stock market based on Blockchain and cryptocurrency wallet, that allows you to put bets with NASDAQ Orders book without registration and opening broker's accounts.</span>
+        </h4>
+        <h2 class="text-center text-uppercase font-weight-bold my-4">
+            <span id="currentBettingName">you can try it right now!</span>
+        </h2>
+        <h5 class="text-center">
+            All that you need, select the company with stock price of which you'll like to work.
+        </h5>
+
+        <hr class="mb-5 w-50 mx-auto">
+
+        <div class="card-columns">
+
+            @if (ViewBag.InstrumentList != null)
+        {
+
+
+
+            foreach (var item in ViewBag.InstrumentList)
+            {
+                <div class="card" style="padding: 10px;">
+                    <a href="/SpreadBetting/@item.Code" title="@item.CompanyName Stock Price Spread Betting">
+                        <div>
+                            <div class="mr-2" style="float:left; width: 50px !important; height: 50px !important; background:url(@item.LogoUrl) no-repeat; background-size: contain;"></div>
+                            <h4 class="card-title">
+                                @item.Code, @item.CompanyName
+                            </h4>
+                        </div>
+
+                        <p style="clear: left; margin-bottom: 2px;">
+                            <small>@item.Sector, @item.Industry</small>
+                        </p>
+                    </a>
+                </div>
+        }
+    }
+
+        </div>
+    </div>
+
+}

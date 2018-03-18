@@ -1,0 +1,528 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "momentSetup",
+				"type": "string"
+			},
+			{
+				"name": "momentCloseValue",
+				"type": "string"
+			},
+			{
+				"name": "momentOpen1MValue",
+				"type": "string"
+			},
+			{
+				"name": "durationLockBetReceiving",
+				"type": "uint256"
+			},
+			{
+				"name": "durationBettingResult",
+				"type": "uint256"
+			}
+		],
+		"name": "setupBetting",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"name": "stocksIndex",
+		"outputs": [
+			{
+				"name": "totalPool",
+				"type": "uint256"
+			},
+			{
+				"name": "priceStart",
+				"type": "uint256"
+			},
+			{
+				"name": "priceEnd",
+				"type": "uint256"
+			},
+			{
+				"name": "betsCount",
+				"type": "uint256"
+			},
+			{
+				"name": "canceledBetsCount",
+				"type": "uint256"
+			},
+			{
+				"name": "isWinner",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "myid",
+				"type": "bytes32"
+			},
+			{
+				"name": "result",
+				"type": "string"
+			}
+		],
+		"name": "__callback",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "bettorsIndex",
+		"outputs": [
+			{
+				"name": "betsCount",
+				"type": "uint256"
+			},
+			{
+				"name": "canceledBetsCount",
+				"type": "uint256"
+			},
+			{
+				"name": "isRewarded",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "rewardCheck",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "actionStatus",
+		"outputs": [
+			{
+				"name": "isOpen",
+				"type": "bool"
+			},
+			{
+				"name": "isStart",
+				"type": "bool"
+			},
+			{
+				"name": "isEnd",
+				"type": "bool"
+			},
+			{
+				"name": "isVoided",
+				"type": "bool"
+			},
+			{
+				"name": "duration",
+				"type": "uint256"
+			},
+			{
+				"name": "durationLockBetReceiving",
+				"type": "uint256"
+			},
+			{
+				"name": "durationBettingResult",
+				"type": "uint256"
+			},
+			{
+				"name": "momentStart",
+				"type": "uint256"
+			},
+			{
+				"name": "momentCloseValue",
+				"type": "string"
+			},
+			{
+				"name": "momentOpen1MValue",
+				"type": "string"
+			},
+			{
+				"name": "momentSetup",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "myid",
+				"type": "bytes32"
+			},
+			{
+				"name": "result",
+				"type": "string"
+			},
+			{
+				"name": "proof",
+				"type": "bytes"
+			}
+		],
+		"name": "__callback",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "queryProp",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "version",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getBettorInfo",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "bytes32[]"
+			},
+			{
+				"name": "",
+				"type": "uint256[]"
+			},
+			{
+				"name": "",
+				"type": "bool[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "refundKill",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "index",
+				"type": "bytes32"
+			}
+		],
+		"name": "getStockInfo",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "rewardClaim",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "totalReward",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getTotalPool",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "s",
+				"type": "string"
+			}
+		],
+		"name": "stringToUintNormalize",
+		"outputs": [
+			{
+				"name": "result",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "stock",
+				"type": "bytes32"
+			}
+		],
+		"name": "sendBet",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "stocks",
+		"outputs": [
+			{
+				"name": "oddsAAPL",
+				"type": "int256"
+			},
+			{
+				"name": "oddsMSFT",
+				"type": "int256"
+			},
+			{
+				"name": "oddsGOOG",
+				"type": "int256"
+			},
+			{
+				"name": "AAPL",
+				"type": "bytes32"
+			},
+			{
+				"name": "MSFT",
+				"type": "bytes32"
+			},
+			{
+				"name": "GOOG",
+				"type": "bytes32"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "recovery",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "totalPool",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "stock",
+				"type": "bytes32"
+			}
+		],
+		"name": "cancelAllBet",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "description",
+				"type": "string"
+			}
+		],
+		"name": "newOraclizeQuery",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "price",
+				"type": "uint256"
+			}
+		],
+		"name": "newPriceTicker",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "val",
+				"type": "uint256"
+			}
+		],
+		"name": "Deposit",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "val",
+				"type": "uint256"
+			}
+		],
+		"name": "Withdraw",
+		"type": "event"
+	}
+]

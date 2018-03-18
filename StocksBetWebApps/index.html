@@ -1,0 +1,872 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="js .page-loader-done">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+  <link href="/css/plugin-blazy.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/animate.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/plugin-owl-carousel.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/magnific-popup.css" rel="stylesheet" type="text/css">
+  <link href="/css/plugin-magnific-popup.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/plugin-sticky-classes.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/fakeLoader.css" rel="stylesheet" type="text/css">
+  <link href="/css/theme-style.min.css" rel="stylesheet">
+  <link href="/css/colour-blue.css" id="colour-scheme" rel="stylesheet">
+  <link href="/css/custom-style.css" rel="stylesheet">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <!--<link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">-->
+  <!--<link href="/css/flag-icon.min.css" rel="stylesheet">-->
+
+  <title>Stocks.Bet allows you to bet on stock prices with Blockchain technologies and without registration.</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Le fav and touch icons - @todo: fill with your icons or remove, try https://realfavicongenerator.net -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="icon" href=​ "/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/assets/manifest.json">
+  <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+  <meta name="msapplication-config" content="/assets/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Google fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Rambla:400,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
+
+  <!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta property="og:url" content="http://stocks.bet/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Stocks.Bet" />
+  <meta property="og:description" content="Bet on companies" />
+  <meta property="og:image" content="http://stocks.bet/android-chrome-192x192.png" />
+</head>
+
+<!-- ======== @Region: body ======== -->
+
+<body class="page page-index-static navbar-layout-default animates-pending">
+  <!--
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_EN/sdk.js#xfbml=1&version=v2.12';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  -->
+  <!-- @plugin: page loading indicator, delete to remove loader -->
+  <div class="page-loader" data-toggle="page-loader" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(46, 204, 113); z-index: 9999999; display: none;">
+    <div class="fl spinner6" style="position: absolute; left: 681px; top: 513.5px;">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+
+  <!-- ======== @Region: #header ======== -->
+  <div id="header">
+    <!--Header upper region-->
+    <!--
+      <div class="header-upper">
+        <div class="header-inner container">
+        </div>
+      </div>
+    -->
+    <div data-toggle="sticky" class="sticky" style="top: 0px;">
+      <div class="header-upper">
+        <div class="header-inner container">
+          <div class="row text-center">
+            <div class="col-lg-2">
+              <a href="https://github.com/StocksBet" title="Stocks.Bet in Github" target="_blank" class="social-icons">
+                <div class="fab fa-github icon-0x text-white"></div>
+              </a>
+            </div>
+            <div class="col-lg-2">
+              <a href="https://twitter.com/StocksBet" title="Stocks.Bet in Twitter" target="_blank" class="social-icons">
+                <div class="fab fa-twitter icon-0x text-white"></div>
+              </a>
+            </div>
+            <div class="col-lg-2">
+              <a href="https://t.me/StocksBetChannel" title="Stocks.Bet in Telegram" target="_blank">
+                <div class="fab fa-telegram icon-0x text-white"></div>
+              </a>
+            </div>
+            <div class="col-lg-2">
+              <a href="https://medium.com/stocksbet" title="Stocks.Bet in Medium" target="_blank" class="social-icons">
+                <div class="fab fa-medium icon-0x text-white"></div>
+              </a>
+            </div>
+            <div class="col-lg-2">
+              <a href="https://www.youtube.com/channel/UCdEWqhuO2TqfDPghSXnd0MA" title="Stocks.Bet in Youtube" target="_blank" class="social-icons">
+                <div class="fab fa-youtube icon-0x text-white"></div>
+              </a>
+            </div>
+            <div class="col-lg-2">
+              <a href="https://www.facebook.com/StocksBetPage" title="Stocks.Bet in Facebook" target="_blank" class="social-icons">
+                <div class="fab fa-facebook icon-0x text-white"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Header & Branding region-->
+      <div class="header">
+        <div class="header-inner container">
+          <div class="header-brand">
+            <a class="header-brand-text" href="/" title="Home">
+              <h1 class="h2">
+                <span class="header-brand-text-alt">Stocks.</span>Bet
+              </h1>
+            </a>
+            <div class="header-divider d-none d-lg-block"></div>
+            <div class="row mt-1">
+              <div class="ml-3 mt-0 header-slogan d-none d-lg-block"> All our products are about Betting on Stock Market with Blockchain.</div>
+              <!--<div class="ml-2"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-size="large" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>-->
+              <!--<div class="ml-2 fb-share-button" data-href="http://stocks.bet/" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fstocks.bet%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>-->
+            </div>
+          </div>
+          <div class="header-block order-12">
+            <a href="/ru/" class="nav-link p-1">
+              Russian version
+              <i class="fas fa-globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== @Region: #highlighted ======== -->
+  <div id="highlighted">
+    <div class="bg-white overlay overlay-op-6 text-center px-3 py-5 py-lg-6 flex-valign bg-img blazy-bg b-loaded" data-css="{&quot;background-position&quot;: &quot;center bottom&quot;}"
+      style="background-position: center bottom; background-image: url(&quot;assets/img/backgrounds/clouds-2517653_1920.jpg&quot;);">
+      <h2 class="text-white" data-animate-delay="0.2" style="animation-delay: 0.2s; font-weight: 100;">
+        <img src="/img/logo.svg" width="200">
+        <br> Bet on the Stock Market price movements with
+        <span class="font-weight-bold">Stocks.Bet!</span>
+      </h2>
+      <h4 class="text-grey font-weight-normal" data-animate-delay="0.35" style="animation-delay: 0.35s;">
+         Long-term and short-term betting are the main areas to create our projects.
+      </h4>
+      <hr class="hr-primary hr-lg w-20 mx-auto my-4" data-animate-delay="0.45" style="animation-delay: 0.45s;">
+      <div>
+        <a href="./assets/pdf/whitepaper.pdf" class="btn btn-primary btn-rounded py-lg-3 px-lg-5" data-toggle="scroll-link" data-animate-delay="0.55"
+          style="animation-delay: 0.55s;" target="_ blank">WHITEPAPER</a>
+        <a href="/#STBT" class="btn btn-primary btn-rounded py-lg-3 px-lg-5" data-toggle="scroll-link" data-animate-delay="0.55"
+          style="animation-delay: 0.55s;">CROWDSALE</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container py-4 py-lg-4">
+
+    <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary">
+    <h2 class="text-center text-uppercase font-weight-bold my-0">
+      Our products
+    </h2>
+    <h5 class="text-center font-weight-light mt-2 mb-0 text-muted">
+      All our products are about Betting on Stock Market with Blockchain.
+      <br> Here are two test applications where you can see the main functionality of long-term and short-term betting.
+    </h5>
+
+    <hr class="mb-5 w-50 mx-auto">
+
+    <div class="row pricing-stack">
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+        <div class="card bg-white text-center card-outline-primary">
+          <h3 class="card-title py-3 text-shadow">
+            <span class="em">Parimutuel
+              <br>Betting DAPP</span>
+          </h3>
+          <p class="price-banner bg-primary text-white border-primary card-body-overlap">
+            <a href="/app">
+              <img src="/img/ParimutuelBetting.png" style="width: 100%;">
+            </a>
+          </p>
+          <div class="card-body">
+            <ul class="list-unstyled list-border-dots">
+              <li>Based on Ethereum Smart Contract</li>
+              <li>Best DAPP for Long-term betting</li>
+              <li>Limited number of stocks</li>
+            </ul>
+            <a href="/app" class="btn btn-primary btn-block btn-rounded mt-4">Try it in Eth Test Network</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="card bg-white bg-shadow text-center card-outline-primary">
+          <div class="card-ribbon card-ribbon-top card-ribbon-left bg-primary text-white">New prototype</div>
+          <h3 class="card-title py-3 text-shadow">
+            <span class="em">Spread
+              <br>Betting APP</span>
+          </h3>
+          <p class="price-banner bg-primary text-white border-primary card-body-overlap">
+            <a href="/SpreadBetting">
+              <img src="/img/SpreadBetting.png" style="width: 100%;">
+            </a>
+          </p>
+          <div class="card-body">
+            <ul class="list-unstyled list-border-dots">
+              <li>High liquidity of the market</li>
+              <li>Best APP for Short-term betting</li>
+              <li>Unlimited number of stocks</li>
+              <li>Permanent counterparty</li>
+              <li>Real time data</li>
+            </ul>
+            <a href="/SpreadBetting" class="btn btn-primary btn-block btn-rounded mt-4">Try it with IExTrading data</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+
+  </div>
+
+
+  <div class="p-3 text-center text-lg-left bg-dark text-white overlay overlay-primary overlay-op-9 bg-img blazy-bg" data-animate="fadeIn">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-7 py-2">
+          <h4 class="font-weight-bold mt-1">
+            Source code Repository with Stocks.bet projects
+          </h4>
+          All our apps development you can track on the Github.
+        </div>
+        <div class="col-12 col-lg-5 py-2 text-lg-right mt-2">
+          <a href="https://github.com/STOCKSBET" class="btn btn-lg btn-rounded btn-primary px-4">Open Source Code
+            <i class="fab fa-github ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container py-4 py-lg-4">
+
+    <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary">
+    <h2 class="text-center text-uppercase font-weight-bold my-0">
+      How It Works
+    </h2>
+    <h5 class="text-center font-weight-light mt-2 mb-0 text-muted">
+      Description of applications functionality.
+    </h5>
+
+    <hr class="mb-5 w-50 mx-auto">
+
+    <div id="content" class="p-0">
+      <div class="py-3 pt-lg-0 pb-lg-0">
+        <div class="container">
+          <div class="row">
+            <div data-animate-delay="0.4" data-animate-offset="100%" style="animation-delay: 0.4s;">
+              <p>For the first step you need to know what is
+                <a href="https://en.wikipedia.org/wiki/Parimutuel_betting" target="_blank">Parimutuel betting</a> and what is
+                <a href="https://en.wikipedia.org/wiki/Spread_betting" target="_blank">Spread betting</a>.</p>
+              <p>The next step is to explain why we are creating two products. Our fist idea was to create Parimutuel Betting
+                DAPP based on Blockchain contract with all business logic in this contract. It is Decentralized application
+                with maximum security. And after announcement this product we get feedback what it does not have enough dynamics.
+                In order to provide dynamics to our users we create completely new product - prototype of Spread Betting
+                App.
+                <a href="/SpreadBetting">This prototype</a> demonstrates how to make bets on the best Bid/Ask in Orders Book.</p>
+              <p>Let us now turn to the products functionality:</p>
+              <p>
+                <a href="/app/">
+                  <b>Parimutuel Betting DAPP</b>
+                </a>
+              </p>
+              <p>All calculations in ETH and STBT tokens.</p>
+              <p>For beta version there is three companies' stocks:</p>
+              <ul>
+                <li>Microsoft (MSFT),</li>
+                <li>Google (GOOG),</li>
+                <li>Apple (AAPL).</li>
+              </ul>
+              <p></p>
+              <p>Bettors can place bet on the listed stocks they believe that will turn higher on the start of market in view
+                of other stocks in the rally moment. To place the bet and claimed the reward bettors need to use Metamask
+                plugin for Chrome / Firefox / Opera / Brave.</p>
+              <p>All operations are completely secured by the Blockchain contract. There is no one has control over the bettors'
+                investments or process of stocks' rally.</p>
+              <p>
+                <a href='https://github.com/STOCKSBET/Contracts/blob/master/contracts/StocksBetting.sol'>This contract</a> allows you to place bet on the price of NASDAQ listed stocks and win from bettors who not
+                so smart as you.</p>
+              <p>
+                This contract can control the funds, calculate the change of stocks with market close price and market open price plus one
+                minute. Contract prepare reward for the winning bettors. The prices of stocks come from
+                <a href='https://www.alphavantage.co'>https://www.alphavantage.co</a> as a main API, and Stocks.Bet API as alternative. The price set with Oraclize.it
+                at the beginning (16:30 NY) and end of the bet period (10:00 NY).
+              </p>
+
+
+
+              <p>
+                <a href="/SpreadBetting">
+                  <b>Spread Betting APP</b>
+                </a>
+              </p>
+              <p>All calculations in STBT tokens.</p>
+              <p>In the prototype we use top 200 liquid stocks of companies with listing on NASDAQ Exchange.</p>
+              <p>Let's look at the few example:</p>
+
+              <p>
+                <b>Going Long</b>
+              </p>
+              <p>The Microsoft Corporation Stocks with symbol MSFT are trading at a buy price of 94.60 and a sell price of 94.65.
+                You believe that the price of MSFT will rise, so you decide to go long on MSFT and set a bet of 10 STBT to
+                the movement at 94.65.</p>
+              <p>The market proceeds to move in your favour and the sell price of MSFT rises to 94.65, so you decide to close
+                your trade.</p>
+              <p>Your profit would be 10 STBT.</p>
+
+              <p>
+                <b>Going Short</b>
+              </p>
+              <p>Advanced Micro Devices Inc Stocks with symbol AMD are trading at a sell price of 11.47 and a buy price of 11.40.
+                You anticipate that the price of AMD stocks will decrease, so you decide to go short and set a bet of 10
+                STBT to movement at 11.40.</p>
+              <p>On this occasion, the market moves against you and the buy price for AMD stocks rises to 11.47, so you close
+                your trade.</p>
+              <p>In this situation, your loss would be 10 STBT.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="p-3 text-center text-lg-left bg-dark text-white overlay overlay-primary overlay-op-9 bg-img blazy-bg" data-animate="fadeIn">
+    <div class="container">
+
+      <div class="row text-center">
+        <div class="col-lg-3 py-2" data-animate="fadeIn" data-animate-delay="0.1" style="animation-delay: 0.1s;">
+          <i class="fa fa-hand-point-right icon-2x"></i>
+          <h4 class="mt-2">
+            Bet on Stocks price
+          </h4>
+          <p>You know that some Stocks going up. Bet on it!</p>
+        </div>
+        <div class="col-lg-3 py-2" data-animate="fadeIn" data-animate-delay="0.2" style="animation-delay: 0.2s;">
+          <i class="fa fa-trophy icon-2x"></i>
+          <h4 class="mt-2">
+            Win cryptocurrency
+          </h4>
+          <p>All operations in ETH and STBT Tokens.</p>
+        </div>
+        <div class="col-lg-3 py-2" data-animate="fadeIn" data-animate-delay="0.3" style="animation-delay: 0.3s;">
+          <i class="fa fa-users icon-2x"></i>
+          <h4 class="mt-2">
+            Trustless consensus
+          </h4>
+          <p>Don't need registration, All transaction persists in Blockchain. </p>
+        </div>
+        <div class="col-lg-3 py-2" data-animate="fadeIn" data-animate-delay="0.4" style="animation-delay: 0.4s;">
+          <i class="fa fa-chart-line icon-2x"></i>
+          <h4 class="mt-2">
+            Holding STBT tokens
+          </h4>
+          <p>Get dividend payouts in ETH by holding STBT tokens.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <br>
+  <br>
+  <br>
+
+  <div>
+    <div class="bg-dark text-white p-3 text-center divider-arrow divider-arrow-b divider-dark">
+      <div class="container">
+        <hr class="hr-lg mt-0 mb-2 w-10 mx-auto hr-primary">
+        <h3 class="text-center text-uppercase font-weight-bold my-0">
+          Roadmap
+        </h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="timeline timeline-left">
+      <!--<div class="timeline-breaker highlight">That is what we have already done, but it is just a beginning ;)</div>-->
+      <div class="timeline-breaker highlight">We have already done it</div>
+      
+
+      <div class="timeline-item animated fadeIn de-02">
+        <div class="timeline-item-date">DEC 2017</div>
+        <h4 class="timeline-item-title">
+          Create Smart Contract (completed)
+        </h4>
+        <p class="timeline-item-description">You can follow the update process here:
+          <a href='https://github.com/STOCKSBET/Contracts/blob/master/contracts/StocksBetting.sol'>StocksBetting.sol</a>.</p>
+      </div>
+
+
+      <div class="timeline-item animated fadeIn de-02">
+        <div class="timeline-item-date">2017- Feb 2018</div>
+        <h4 class="timeline-item-title">
+          Create beta Parimutuel Betting DAPP (completed)
+        </h4>
+        <p class="timeline-item-description">Try it in Ropsten Testnet
+          <a href='/app/'>Stocks.Betting DApp</a>. It based on Blockchain contract with all business logic in this contract. It is Decentralized application with maximum security. </p>
+      </div>
+
+      <div class="timeline-item animated fadeIn de-02">
+          <div class="timeline-item-date">Mar 2018</div>
+          <h4 class="timeline-item-title">
+            Create prototype of Spread Betting APP (completed)
+          </h4>
+          <p class="timeline-item-description">Try it with IExTrading data
+            <a href='/SpreadBetting/'>Stocks.Betting App</a>.
+            This prototype demonstrates how to make bets on the best Bid/Ask in Orders Book.
+          </p>
+        </div>
+
+      <div class="timeline-breaker timeline-breaker-middle">We are doing now</div>
+
+
+      <div class="timeline-item highlight animated fadeIn de-02">
+        <div class="timeline-item-date">Q1-Q2 2018</div>
+        <h4 class="timeline-item-title">
+          Attraction of investments
+        </h4>
+        <p class="timeline-item-description"><a href="/#STBT">Crowdsale process</a> and <a href="https://medium.com/stocksbet/stocks-bet-bounty-program-9dd60b2f8c0a">Bounty program</a>.</p>
+      </div>
+
+      <div class="timeline-item highlight animated fadeIn de-02">
+          <div class="timeline-item-date">Q2 2018</div>
+          <h4 class="timeline-item-title">
+            UI and Functionality enhancements
+          </h4>
+          <p class="timeline-item-description">
+            Add new features to the long-term and short-term betting applications.  Code audit.
+          </p>
+        </div>
+
+      <div class="timeline-breaker timeline-breaker-middle">Our plans</div>
+
+      <div class="timeline-item right animated fadeIn de-02">
+        <div class="timeline-item-date">Q1 2018 - Q4 2018</div>
+        <h4 class="timeline-item-title">
+          Listing on Cryptocurrency Exchanges
+        </h4>
+      </div>
+
+      <div class="timeline-item right animated fadeIn de-02">
+        <div class="timeline-item-date">Q3 2018</div>
+        <h4 class="timeline-item-title">
+          Publicate the contract with daily bets to MainNet and create dividends contract
+        </h4>
+        <p class="timeline-item-description">A huge part of the work has already been done on the beta version.
+          <br>This gives an advantage to localizing the last blocks of production in MainNet.</p>
+      </div>
+
+
+
+
+      <div class="timeline-item right animated fadeIn de-02">
+        <div class="timeline-item-date">Q3 2018</div>
+        <h4 class="timeline-item-title">
+          Contracts with more stocks and bet types
+        </h4>
+        <p class="timeline-item-description">
+          We would like add contract Guess the price of Stocks and values of World Stock Market Indices.</p>
+      </div>
+
+
+      <div class="timeline-item right animated fadeIn de-02">
+        <div class="timeline-item-date">Q4 2018</div>
+        <h4 class="timeline-item-title">
+          Voting portal
+        </h4>
+        <p class="timeline-item-description">
+          We plan to determinate features of betting and rules on this portal.
+        </p>
+      </div>
+
+      <div class="timeline-item right animated fadeIn de-02">
+        <div class="timeline-item-date">Q4 2018</div>
+        <h4 class="timeline-item-title">
+            Mobile application with aggregation of  DAPP and APP functionality
+        </h4>
+        <!--<p class="timeline-item-description">....</p>-->
+      </div>
+
+      <div class="timeline-breaker timeline-breaker-bottom">Follow our updates</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="bg-dark  mt-6">
+      <div class="container-fluid">
+        <div class="row">
+          <!--<div class="col-lg-5 divider-diagonal divider-diagonal-r divider-dark bg-img blazy-bg b-loaded" style="background-image: url(&quot;assets/img/backgrounds/stocks2bg2.jpg&quot;);"></div>-->
+          <div class="col-lg-5 divider-diagonal divider-diagonal-r divider-dark bg-img blazy-bg b-loaded" style="background-image: url(&quot;/img/MobileApp.jpg&quot;);"></div>
+          <div class="col-lg-7 py-5">
+            <hr class="hr-lg mt-3 mb-2 w-10 ml-0 hr-primary">
+            <h3 class="text-slab text-white mt-0 mb-5">
+              Choose
+              <span class="text-primary font-weight-bold  text-uppercase">STBT Token</span>
+              to be Stocks.bet holder
+            </h3>
+            <div class="row">
+              <div class="col-2 col-md-1 text-center">
+                <i class="fas fa-check text-primary icon-2x"></i>
+              </div>
+              <div class="col-10 col-md-11 text-grey">
+                <h4 class="font-weight-bold text-white">
+                  Dividend payouts
+                </h4>
+                <p>STBT token holders get fixed income in ETH. It's 5% from all bettings.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 col-md-1 text-center">
+                <i class="fas fa-check text-primary icon-2x"></i>
+              </div>
+              <div class="col-10 col-md-11 text-grey">
+                <h4 class="font-weight-bold text-white">
+                  Discounted and features
+                </h4>
+                <p>You can place the bet with STBT token. It allows you to have some discount unlock different features.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 col-md-1 text-center">
+                <i class="fas fa-check text-primary icon-2x"></i>
+              </div>
+              <div class="col-10 col-md-11 text-grey">
+                <h4 class="font-weight-bold text-white">
+                  Voting
+                </h4>
+                <p>Your voting is the best thing to fix features of betting and rules.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="STBT">
+    <hr class="my-0">
+    <div class="bg-light py-3 py-lg-6 overlay overlay-white overlay-op-9 bg-img blazy-bg b-loaded">
+      <div class="container">
+        <h3>
+          STBT Token
+        </h3>
+        We are applied for listing on the
+        <a href="https://idex.market">IDEX Exchange</a>.
+        <hr class="mt-0 mb-4 hr-blank">
+        <hr class="hr-lg m-0 hr-primary w-20">
+        <hr class="mt-0 mb-4 hr-blank">
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col-lg-3">
+              <div class="p-2">STBT Token on Etherscan</div>
+            </div>
+            <div class="col">
+              <div class="p-2">
+                <a href="https://etherscan.io/token/0x2611eb890ec83242ed0879a3e4e5b131a184f8da" target="_blank">Link to Etherscan.io</a>
+              </div>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-lg-3">
+              <div class="p-2">Type</div>
+            </div>
+            <div class="col">
+              <div class="p-2">ERC20</div>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-lg-3">
+              <div class="p-2">Total supply</div>
+            </div>
+            <div class="col">
+              <div class="p-2">125,000,000 STBT</div>
+            </div>
+          </div>
+
+          <div class="row no-gutters">
+            <div class="col-lg-3">
+              <div class="p-2"> &#8226; Crowdsale</div>
+            </div>
+            <div class="col">
+              <div class="p-2">100,000,000 STBT</div>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-lg-3">
+              <div class="p-2"> &#8226;
+                <a href='https://medium.com/stocksbet/stocks-bet-bounty-program-9dd60b2f8c0a'>Bounty Program</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-2">6,250,000 STBT</div>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-lg-3">
+              <div class="p-2"> &#8226; Founders Token</div>
+            </div>
+            <div class="col">
+              <div class="p-2">18,750,000 STBT</div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="mt-0 mb-4 hr-blank">
+        <h3>
+          Crowdsale Date
+        </h3>
+        <hr class="hr-lg m-0 hr-primary w-20">
+        <hr class="mt-0 mb-4 hr-blank">
+        <div class="container">
+
+
+
+          <div class="row no-gutters">
+            <div class="col-lg-3">
+              <div class="p-2">Phase-1 whitelisted sale</div>
+            </div>
+            <div class="col">
+              <div class="p-2">
+                <b>March 25 - March 26, 2018, 8:00 GMT</b>
+                <br> 1 ETH = 25,000 STBT
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="row no-gutters">
+            <div class="col-lg-3">
+              <div class="p-2">Phase-1 public sale</div>
+            </div>
+            <div class="col">
+              <div class="p-2">
+                March 27 - April 30
+                <br> 1 ETH = 25,000 STBT
+              </div>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-lg-3">
+              <div class="p-2">Phase-2 public sale</div>
+            </div>
+            <div class="col">
+              <div class="p-2">
+                May 1 - June 30 20:00 GMT
+                <br> 1 ETH = from 18,750 to 12,500 STBT
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters mt-5">
+          <div style="background-color:#465161; padding: 10px;">
+            <a href="https://www.trackico.io/" target="_blank" title="TrackICO">
+              <img border="0" src="https://www.trackico.io/static/img/partner_logo_white.png" alt="TrackICO - provider of information about the best ICOs"
+                width="180px">
+            </a>
+          </div>
+          <div class="ml-3">
+            <div style="padding: 10px; border: #b5bbc4 1px solid; height: 80px;">
+              <a href="https://icodaily.net" target="_blank" title="ICO Daily">
+                <img border="0" src="https://icodaily.net/wp-content/themes/icodaily/img/logo.jpg" width="260px">
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!--
+          <div class="mt-3">
+            <p>Residents or citizens of the USA or China should not participate. Follow the laws regarding token sales and online gambling in your jurisdiction.</p>
+          </div>
+        -->
+      </div>
+    </div>
+  </div>
+  <style>
+    #STBT a {
+      color: #00ADBB;
+      text-decoration: none;
+    }
+
+    #STBT a:hover {
+      color: #007e88;
+      text-decoration: underline;
+    }
+  </style>
+
+  <div id="features" class="bg-white">
+    <div class="bg-dark text-white p-3 text-center divider-arrow divider-arrow-b divider-dark">
+      <div class="container">
+        <hr class="hr-lg mt-0 mb-2 w-10 mx-auto hr-primary">
+        <h3 class="text-center text-uppercase font-weight-bold my-0">
+          JOIN OUR COMMUNITY
+        </h3>
+      </div>
+    </div>
+    <div class="container p-4">
+      <div class="row text-center">
+        <!--
+
+          -->
+        <div class="col-lg-2 py-2">
+          <a href="https://github.com/StocksBet" target="_blank" class="social-icons">
+            <div class="fab fa-github icon-5x text-primary"></div>
+            <p>github.com/
+              <br>StocksBet</p>
+          </a>
+        </div>
+
+        <div class="col-lg-2 py-2">
+          <a href="https://twitter.com/StocksBet" target="_blank" class="social-icons">
+            <div class="fab fa-twitter icon-5x text-primary"></div>
+            <p>twitter.com/
+              <br>StocksBet</p>
+          </a>
+        </div>
+
+        <div class="col-lg-2 py-2">
+          <a href="https://t.me/StocksBetChannel" target="_blank">
+            <div class="fab fa-telegram icon-5x text-primary"></div>
+            <p class="mt-2">https://t.me/
+              <br>StocksBetChannel</p>
+          </a>
+        </div>
+        <!--
+        <div class="col-lg-2 py-2">
+          <a href="https://reddit.com/user/stocksBet/" target="_blank" class="social-icons">
+            <div class="fab fa-reddit icon-5x text-primary"></div>
+            <p>reddit.com
+              <br>/user/stocksBet</p>
+          </a>
+        </div>
+      -->
+        <div class="col-lg-2 py-2">
+          <a href="https://medium.com/stocksbet" target="_blank" class="social-icons">
+            <div class="fab fa-medium icon-5x text-primary"></div>
+            <p>medium.com/
+              <br>StocksBet</p>
+          </a>
+        </div>
+
+
+        <div class="col-lg-2 py-2">
+          <a href="https://www.youtube.com/channel/UCdEWqhuO2TqfDPghSXnd0MA" target="_blank" class="social-icons">
+            <div class="fab fa-youtube icon-5x text-primary"></div>
+            <p>youtube.com</p>
+          </a>
+        </div>
+
+        <div class="col-lg-2 py-2">
+          <a href="https://www.facebook.com/StocksBetPage" target="_blank" class="social-icons">
+            <div class="fab fa-facebook icon-5x text-primary"></div>
+            <p>facebook.com/
+              <br>StocksBetPage</p>
+          </a>
+        </div>
+
+        <!--
+        <div class="col-lg-2 py-2">
+          <a href="https://discord.gg/a5s5UwX" target="_blank" class="social-icons">
+            <div class="fab fa-discord icon-5x text-primary"></div>
+            <p>discord.gg/
+              <br>a5s5UwX</p>
+          </a>
+        </div>
+      -->
+        <div class="col-lg-2 py-2"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+      <div class="bg-light py-3 py-lg-3">
+        <div class="container">
+          <div data-animate="fadeIn" data-animate-duration="0.6" style="animation-duration: 0.6s;">
+            <hr class="mb-6 w-100 mx-auto">
+            <div class="row mb-10">
+              <div class="col-lg-4 text-right mt-2">
+                  <h3>Join our Mailing List</h3>
+              </div>
+              <div class="col-lg-7">
+                <div class="input-group input-group-rounded input-group-lg">
+                  <input id="saveEmailValue" type="text" class="form-control" placeholder="Please enter your email address here">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary btn-lg btn-rounded btn-primary px-5" type="button" onclick="App.saveEmail()">JOIN</button>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    -->
+
+  </div>
+  </div>
+
+  <footer id="footer" class="py-3">
+    <div class="container">
+      <div class="row">
+        <!--@todo: replace with company copyright details-->
+        <div class="col-md-6">
+          <p class="mb-0 text-sm">Copyright 2018 © Stocks.Bet</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/custom-script.js"></script>
+  <script src="/js/script.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <script src="/js/main.js"></script>
+
+</body>
+
+</html>
